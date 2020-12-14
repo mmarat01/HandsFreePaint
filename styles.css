@@ -1,0 +1,84 @@
+body {
+  background-color: #9dd9f3;
+}
+
+#result,
+#title {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+#title {
+  font-size: 2.8rem;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+#result {
+  font-size: 1.5rem;
+}
+
+#gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#video,
+#drawingCanvas,
+#controlPanel {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#video {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#controlPanel {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#stylusSelector {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#colorSelector {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clearButton {
+  grid-column: 2;
+  grid-row: 2;
+  width: 6rem;
+}
+
+#drawingCanvas {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  margin-top: 3.5rem;
+  box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.25);
+}
+
+#video,
+#drawingCanvas {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg); /* Safari and Chrome */
+  -moz-transform: rotateY(180deg); /* Firefox */
+}

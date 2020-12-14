@@ -1,0 +1,58 @@
+<!-- 
+ * paint.html
+ * Mijael Maratuech & Maya Scandinaro
+ * COMP86 Non-WIMP project: "Hands-off Paint"
+ * December, 2020
+ * 
+ * Based on https://trackingjs.com/docs.html 
+ * 
+ * NOTES: 
+ *      - You must connect to a remote server and have tracking-min.js
+ *      in your directory to use this application. We recommend one of
+ *      two commands: "python -m SimpleHTTPServer" or "python3 -m http.server".
+ *
+ *      - For ease of use, play with interface with a neutral background
+ *     behind you and even lighting.
+ *
+ *      - The three colors allowed for stylus detection work better if 
+ *      the objects' shades of those colors resemble common, bright highlighters!
+ *
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hands-Off Paint</title>
+    <script src="tracking-min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="paint.js"></script>
+  </head>
+  <body>
+    <div id="title">Hands-Off Paint 🎨</div>
+    <br />
+    <div id="result">Stylus not calibrated</div>
+    <br />
+    <div id="gridContainer">
+      <canvas id="drawingCanvas" width="450" height="400"></canvas>
+      <div id="controlPanel">
+        <input type="color" id="colorSelector" value="#FF0000" onchange="changeDrawingColor(this)" onkeyup="changeDrawingColor(this)"/>
+        <div id="stylusSelector">
+          <button type="button" id="y" onclick="changeStylusColor(this)">Yellow &#x1F7E1;</button>
+          <button type="button" id="g" onclick="changeStylusColor(this)">Green &#x1F7E2;</button>
+          <button type="button" id="p" onclick="changeStylusColor(this)">Purple &#x1F7E3;</button>
+        </div>
+        <button type="button" id="clearButton" onclick="clearCanvas()">Clear</button>
+      </div>
+      <video
+        id="video"
+        width="250"
+        height="250"
+        preload
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
+  </body>
+</html>
