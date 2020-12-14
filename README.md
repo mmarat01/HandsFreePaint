@@ -1,4 +1,4 @@
-# draw
+# Hands-Off Paint
 COMP 86 - November 2020
 Authors: Maya Scandinaro, Mijael Maratuech
 
