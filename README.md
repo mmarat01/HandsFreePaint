@@ -14,3 +14,7 @@ Built with tracking.js and HTML5 Canvas.
 3. Hold an object of the selected color and move it in front of your camera. 
 4. Use the RGB color selector for your *drawing* color.
 5. Draw your abstract piece on the HTML5 Canvas 😳.
+
+...? :bowtie: 
+![I drew a thing](https://github.com/mmarat01/HandsFreePaint/blob/master/Screen%20Shot%202021-03-18%20at%203.01.13%20PM.png?raw=true "Example")
+
