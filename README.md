@@ -4,7 +4,7 @@ Authors: Maya Scandinaro, Mijael Maratuech
 
 Non-WIMP project, 'Hands-Free Paint'
 
-Small non-WIMP interface that allows to paint a canvas moving an object of a given
+Small non-WIMP interface that lets you paint a canvas moving an object of a given
 color.
 Built with tracking.js and HTML5 Canvas.
 
